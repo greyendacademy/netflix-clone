@@ -232,7 +232,7 @@ class Home extends StatelessWidget {
                           const OnlyonNetflix(
                             ooNColor: Colors.blue,
                             movieTitle: 'Game Dev Tycoon',
-                            imagePath: 'asset/images/gta.jpg',
+                            imagePath: 'assets/images/gta.jpg',
                           ),
                           const SizedBox(width: 7),
                           GestureDetector(
@@ -246,20 +246,20 @@ class Home extends StatelessWidget {
                             child: const OnlyonNetflix(
                               ooNColor: Colors.blue,
                               movieTitle: 'Avatar',
-                              imagePath: 'assets/images/avicon.jpg',
+                              imagePath: 'assets/images/gta.jpg',
                             ),
                           ),
                           const SizedBox(width: 7),
                           const OnlyonNetflix(
                             ooNColor: Colors.blue,
                             movieTitle: 'Game Dev Tycoon',
-                            imagePath: 'asset/images/gta.jpg',
+                            imagePath: 'assets/images/gta.jpg',
                           ),
                           const SizedBox(width: 7),
                           const OnlyonNetflix(
                             ooNColor: Colors.blue,
                             movieTitle: 'Game Dev Tycoon',
-                            imagePath: 'asset/images/gta.jpg',
+                            imagePath: 'assets/images/gta.jpg',
                           ),
                         ],
                       ),
@@ -296,7 +296,7 @@ class Home extends StatelessWidget {
                               OnlyonNetflix(
                                 ooNColor: Colors.blue,
                                 movieTitle: 'Game Dev Tycoon',
-                                imagePath: 'asset/images/gamedev.jpg'
+                                imagePath: 'assets/images/gta.jpg',
                               ),
                               SizedBox(width: 7),
                               OnlyonNetflix(
@@ -308,7 +308,7 @@ class Home extends StatelessWidget {
                               OnlyonNetflix(
                                 ooNColor: Colors.blue,
                                 movieTitle: 'Game Dev Tycoon',
-                                imagePath: 'asset/images/gamedev.jpg'
+                                imagePath: 'assets/images/gta.jpg',
                               ),
                             ],
                           ),
