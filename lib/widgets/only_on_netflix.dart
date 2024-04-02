@@ -3,8 +3,12 @@ import 'package:flutter/material.dart';
 class OnlyonNetflix extends StatelessWidget {
   final Color ooNColor;
   final String movieTitle;
+  final String imagePath;
   const OnlyonNetflix(
-      {super.key, required this.ooNColor, required this.movieTitle});
+      {super.key,
+      required this.ooNColor,
+      required this.movieTitle,
+      required this.imagePath});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +20,7 @@ class OnlyonNetflix extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(6),
         child: Image.asset(
-          'assets/images/avicon.jpg',
+          imagePath,
           fit: BoxFit.cover,
         ),
       ),
