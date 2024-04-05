@@ -4,11 +4,12 @@ class Games extends StatelessWidget {
   final Color gameColor;
   final String gameName;
   final String gameGenre;
+  final String imagePath;
   const Games(
       {super.key,
       required this.gameColor,
       required this.gameName,
-      required this.gameGenre});
+      required this.gameGenre, required this.imagePath});
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +23,13 @@ class Games extends StatelessWidget {
             height: 120,
             decoration: BoxDecoration(
                 color: gameColor, borderRadius: BorderRadius.circular(23)),
+                child: ClipRRect(
+        borderRadius: BorderRadius.circular(6),
+        child: Image.asset(
+          imagePath,
+          fit: BoxFit.cover,
+        ),
+      ),
           ),
           Text(
             gameName,

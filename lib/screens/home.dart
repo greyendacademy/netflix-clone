@@ -120,30 +120,41 @@ class Home extends StatelessWidget {
                   color: Colors.teal, borderRadius: BorderRadius.circular(10)),
               child: Row(
                 children: [
-                  Expanded(
-                    child: ElevatedButton.icon(
-                      onPressed: () {},
-                      icon: const Icon(Icons.play_arrow),
-                      label: const Text("Play"),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white,
-                        foregroundColor: Colors.black,
-                      ),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(6),
+                    child: Image.asset(
+                      'assets/images/taste.jpg',
+                      fit: BoxFit.cover,
                     ),
                   ),
-                  const SizedBox(
-                    width: 16,
-                  ),
-                  Expanded(
-                    child: ElevatedButton.icon(
-                      onPressed: () {},
-                      icon: const Icon(Icons.add),
-                      label: const Text("Add to List"),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.black26,
-                        foregroundColor: Colors.white,
+                  Row(
+                    children: [
+                      Expanded(
+                        child: ElevatedButton.icon(
+                          onPressed: () {},
+                          icon: const Icon(Icons.play_arrow),
+                          label: const Text("Play"),
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.white,
+                            foregroundColor: Colors.black,
+                          ),
+                        ),
                       ),
-                    ),
+                      const SizedBox(
+                        width: 16,
+                      ),
+                      Expanded(
+                        child: ElevatedButton.icon(
+                          onPressed: () {},
+                          icon: const Icon(Icons.add),
+                          label: const Text("Add to List"),
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.black26,
+                            foregroundColor: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
@@ -182,25 +193,32 @@ class Home extends StatelessWidget {
                           Row(
                             children: [
                               Games(
-                                  gameColor: Colors.blue,
-                                  gameName: 'Game Dev Tycoon',
-                                  gameGenre: 'Simulation'),
+                                gameColor: Colors.blue,
+                                gameName: 'Magi',
+                                gameGenre: 'Simulation',
+                                imagePath: 'assets/images/magi.jpg',
+                              ),
                               SizedBox(width: 7),
                               Games(
-                                  gameColor: Colors.teal,
-                                  gameName:
-                                      'GTA: San Andreas Detective Othniel on fleek',
-                                  gameGenre: 'Action'),
+                                gameColor: Colors.teal,
+                                gameName: 'Naruto',
+                                gameGenre: 'Action',
+                                imagePath: 'assets/images/naruto.jpg',
+                              ),
                               SizedBox(width: 7),
                               Games(
-                                  gameColor: Colors.teal,
-                                  gameName: 'GTA: San Andreas',
-                                  gameGenre: 'Action'),
+                                gameColor: Colors.teal,
+                                gameName: 'Card Blast',
+                                gameGenre: 'Logic',
+                                imagePath: 'assets/images/cardblast.jpeg',
+                              ),
                               SizedBox(width: 7),
                               Games(
-                                  gameColor: Colors.teal,
-                                  gameName: 'GTA: San Andreas',
-                                  gameGenre: 'Action'),
+                                gameColor: Colors.teal,
+                                gameName: 'Dungean',
+                                gameGenre: 'Action',
+                                imagePath: 'assets/images/dungeon.jpg',
+                              ),
                             ],
                           ),
                         ]),
@@ -232,7 +250,7 @@ class Home extends StatelessWidget {
                           const OnlyonNetflix(
                             ooNColor: Colors.blue,
                             movieTitle: 'Game Dev Tycoon',
-                            imagePath: 'assets/images/gta.jpg',
+                            imagePath: 'assets/images/carbon.jpg',
                           ),
                           const SizedBox(width: 7),
                           GestureDetector(
@@ -246,20 +264,20 @@ class Home extends StatelessWidget {
                             child: const OnlyonNetflix(
                               ooNColor: Colors.blue,
                               movieTitle: 'Avatar',
-                              imagePath: 'assets/images/gta.jpg',
+                              imagePath: 'assets/images/avicon.jpg',
                             ),
                           ),
                           const SizedBox(width: 7),
                           const OnlyonNetflix(
                             ooNColor: Colors.blue,
                             movieTitle: 'Game Dev Tycoon',
-                            imagePath: 'assets/images/gta.jpg',
+                            imagePath: 'assets/images/power.jpg',
                           ),
                           const SizedBox(width: 7),
                           const OnlyonNetflix(
                             ooNColor: Colors.blue,
                             movieTitle: 'Game Dev Tycoon',
-                            imagePath: 'assets/images/gta.jpg',
+                            imagePath: 'assets/images/Stranger.jpg',
                           ),
                         ],
                       ),
@@ -290,25 +308,25 @@ class Home extends StatelessWidget {
                               OnlyonNetflix(
                                 ooNColor: Colors.blue,
                                 movieTitle: 'Game Dev Tycoon',
-                                imagePath: 'assets/images/avicon.jpg',
+                                imagePath: 'assets/images/love.jpg',
                               ),
                               SizedBox(width: 7),
                               OnlyonNetflix(
                                 ooNColor: Colors.blue,
                                 movieTitle: 'Game Dev Tycoon',
-                                imagePath: 'assets/images/gta.jpg',
+                                imagePath: 'assets/images/squid.jpg',
                               ),
                               SizedBox(width: 7),
                               OnlyonNetflix(
                                 ooNColor: Colors.blue,
                                 movieTitle: 'Game Dev Tycoon',
-                                imagePath: 'assets/images/gta.jpg',
+                                imagePath: 'assets/images/rotten.jpg',
                               ),
                               SizedBox(width: 7),
                               OnlyonNetflix(
                                 ooNColor: Colors.blue,
                                 movieTitle: 'Game Dev Tycoon',
-                                imagePath: 'assets/images/gta.jpg',
+                                imagePath: 'assets/images/sevenseconds.jpg',
                               ),
                             ],
                           ),
