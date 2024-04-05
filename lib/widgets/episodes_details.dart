@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:netflix_clone/screens/episode_play.dart';
 
 class EpisodeDetails extends StatelessWidget {
   final Color episodeDisplay;
@@ -22,15 +23,24 @@ class EpisodeDetails extends StatelessWidget {
           children: [
             Row(
               children: [
-                Container(
-                  width: 130,
-                  height: 85,
-                  padding: const EdgeInsets.all(16),
-                  margin: const EdgeInsets.all(16),
-                  alignment: Alignment.bottomCenter,
-                  decoration: BoxDecoration(
-                      color: episodeDisplay,
-                      borderRadius: BorderRadius.circular(10)),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const EpisodePlay()),
+                    );
+                  },
+                  child: Container(
+                    width: 130,
+                    height: 85,
+                    padding: const EdgeInsets.all(16),
+                    margin: const EdgeInsets.all(16),
+                    alignment: Alignment.bottomCenter,
+                    decoration: BoxDecoration(
+                        color: episodeDisplay,
+                        borderRadius: BorderRadius.circular(10)),
+                  ),
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
