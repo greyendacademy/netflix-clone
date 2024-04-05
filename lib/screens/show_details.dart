@@ -248,6 +248,7 @@ class ShowDetails extends StatelessWidget {
               const SizedBox(height: 5),
               const EpisodeDetails(
                   episodeDisplay: Colors.teal,
+                  imagePath: 'assets/images/aang.jpg',
                   episodeDuration: '1h 3m',
                   episodeSynopsis:
                       'An Airbender comes to grips with his new reality as war erupts. A centery later,'
@@ -256,6 +257,7 @@ class ShowDetails extends StatelessWidget {
               const SizedBox(height: 5),
               const EpisodeDetails(
                   episodeDisplay: Colors.blue,
+                  imagePath: 'assets/images/warriors.jpg',
                   episodeDuration: '48m',
                   episodeSynopsis:
                       'An Airbender comes to grips with his new reality as war erupts. A centery later,'
@@ -264,6 +266,7 @@ class ShowDetails extends StatelessWidget {
               const SizedBox(height: 5),
               const EpisodeDetails(
                   episodeDisplay: Colors.yellow,
+                  imagePath: 'assets/images/omashu.jpg',
                   episodeDuration: '52m',
                   episodeSynopsis:
                       'An Airbender comes to grips with his new reality as war erupts. A centery later,'
@@ -276,4 +279,3 @@ class ShowDetails extends StatelessWidget {
     );
   }
 }
-

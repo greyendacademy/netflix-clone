@@ -21,10 +21,8 @@ class _EpisodePlayState extends State<EpisodePlay> {
     // Create and store the VideoPlayerController. The VideoPlayerController
     // offers several different constructors to play videos from assets, files,
     // or the internet.
-    _controller = VideoPlayerController.networkUrl(
-      Uri.parse(
-        'https://www.youtube.com/watch?v=ByAn8DF8Ykk&ab_channel=Netflix',
-      ),
+    _controller = VideoPlayerController.asset(
+      'assets/videos/aang.mp4'
     );
 
     // Initialize the controller and store the Future for later use.

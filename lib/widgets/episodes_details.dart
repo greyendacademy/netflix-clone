@@ -13,7 +13,8 @@ class EpisodeDetails extends StatelessWidget {
       required this.episodeDisplay,
       required this.episodeDuration,
       required this.episodeSynopsis,
-      required this.episodeTitle, required this.imagePath});
+      required this.episodeTitle,
+      required this.imagePath});
 
   @override
   Widget build(BuildContext context) {
@@ -41,13 +42,24 @@ class EpisodeDetails extends StatelessWidget {
                     decoration: BoxDecoration(
                         color: episodeDisplay,
                         borderRadius: BorderRadius.circular(10)),
-                        child: ClipRRect(
-        borderRadius: BorderRadius.circular(6),
-        child: Image.asset(
-          imagePath,
-          fit: BoxFit.cover,
-        ),
-      ),
+                    child: Stack(
+                      fit: StackFit.expand,
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(0),
+                          child: Image.asset(
+                            imagePath,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        const Center(
+                            child: Icon(
+                          Icons.play_circle_fill,
+                          color: Colors.white,
+                          size: 40,
+                        )),
+                      ],
+                    ),
                   ),
                 ),
                 Column(
@@ -67,6 +79,3 @@ class EpisodeDetails extends StatelessWidget {
     );
   }
 }
-
-
-
