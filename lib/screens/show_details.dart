@@ -209,7 +209,7 @@ class ShowDetails extends StatelessWidget {
                         Icons.share_outlined,
                         size: 33,
                       ),
-                      Text('My List'),
+                      Text('Share'),
                     ],
                   ),
                 ],

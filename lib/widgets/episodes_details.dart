@@ -3,6 +3,7 @@ import 'package:netflix_clone/screens/episode_play.dart';
 
 class EpisodeDetails extends StatelessWidget {
   final Color episodeDisplay;
+  final String imagePath;
   final String episodeTitle;
   final String episodeDuration;
   final String episodeSynopsis;
@@ -12,7 +13,7 @@ class EpisodeDetails extends StatelessWidget {
       required this.episodeDisplay,
       required this.episodeDuration,
       required this.episodeSynopsis,
-      required this.episodeTitle});
+      required this.episodeTitle, required this.imagePath});
 
   @override
   Widget build(BuildContext context) {
@@ -40,6 +41,13 @@ class EpisodeDetails extends StatelessWidget {
                     decoration: BoxDecoration(
                         color: episodeDisplay,
                         borderRadius: BorderRadius.circular(10)),
+                        child: ClipRRect(
+        borderRadius: BorderRadius.circular(6),
+        child: Image.asset(
+          imagePath,
+          fit: BoxFit.cover,
+        ),
+      ),
                   ),
                 ),
                 Column(
@@ -59,3 +67,6 @@ class EpisodeDetails extends StatelessWidget {
     );
   }
 }
+
+
+

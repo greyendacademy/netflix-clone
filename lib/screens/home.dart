@@ -117,16 +117,21 @@ class Home extends StatelessWidget {
               margin: const EdgeInsets.all(16),
               alignment: Alignment.bottomCenter,
               decoration: BoxDecoration(
-                  color: Colors.teal, borderRadius: BorderRadius.circular(10)),
-              child: Row(
+                color: Colors.teal,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Column(
                 children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(6),
-                    child: Image.asset(
-                      'assets/images/taste.jpg',
-                      fit: BoxFit.cover,
+                  Expanded(
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(6),
+                      child: Image.asset(
+                        'assets/images/taste.jpg',
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
+                  const SizedBox(height: 16),
                   Row(
                     children: [
                       Expanded(
